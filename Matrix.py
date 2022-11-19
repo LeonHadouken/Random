@@ -3,7 +3,7 @@ columns = int(input('Сколько столбцов в таблице?'))
 map = []  # Создаем пустую матрицу
 for i in range(rows):
     map.append([0] * columns)
-for rows in map:  # Выводим матрицу построчно
+for rows in map:  # Выводим карту построчно
     for columns in rows:
         print(columns, end=' ')
     print()
