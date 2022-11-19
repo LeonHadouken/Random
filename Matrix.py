@@ -1,6 +1,6 @@
 rows = int(input('Сколько строк в таблице?'))
 columns = int(input('Сколько столбцов в таблице?'))
-map = []  # Создаем пустую матрицу
+map = []
 for i in range(rows):
     map.append([0] * columns)
 for rows in map:  # Выводим карту построчно
