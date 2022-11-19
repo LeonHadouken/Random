@@ -1,6 +1,6 @@
 dublicate_test = []
 clear_list = []
-list_size = int(input('Введите коли-во элементов списка'))
+list_size = int(input('Введите коли-во элементов'))
 buffer_string = ''
 
 for i in range(list_size):
