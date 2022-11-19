@@ -1,17 +1,20 @@
+# Данный скрипт позволяет создать таблицу указанного размера и выводит на экран
+
 rows = int(input('Сколько строк в таблице?'))
 columns = int(input('Сколько столбцов в таблице?'))
-map = []
-for i in range(rows):
-    map.append([0] * columns)
-for rows in map:  # Выводим карту построчно
-    for columns in rows:
-        print(columns, end=' ')
+map = [([0] * columns) for row in range(rows)]
+for row in map:  # Выводим таблицу построчно
+    for column in row:
+        print(column, end=' ')
     print()
-rows = int(input('Какую строку выбрать?'))
-columns = int(input('Какой столбец?'))
+
+# Также скрипт позволяет заменить ячейку в таблице по ее координатам
+
+row_number = int(input('Какую строку выбрать?'))
+column_number = int(input('Какой столбец?'))
 change = int(input('На что заменить?'))
-map[rows - 1][columns - 1] = change
-for rows in map:  # Снова выводим карту построчно
-    for columns in rows:
-        print(columns, end=' ')
+map[row_number - 1][column_number - 1] = change
+for row in map:  # Выводим таблицу построчно
+    for column in row:
+        print(column, end=' ')
     print()
